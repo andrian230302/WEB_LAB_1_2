@@ -1,0 +1,81 @@
+.features {
+  padding: 140px 0;
+  background: linear-gradient(180deg, #F6F5F5 -45.04%, #FFFFFF 19.67%, #F4F3F3 88.56%);
+  background-size: 100%;
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.features__inner {
+  width: 35%;
+}
+
+.features__heading {
+  line-height: 50px;
+}
+
+.features__paragraph {
+  line-height: 30px;
+}
+
+.features__list {
+  font-size: 14px;
+  list-style: none;
+  padding: 0;
+}
+
+.features__list-item {
+  margin-top: 15px;
+  background: url('../img/checkmark.svg') no-repeat center left;
+  padding: 5px 34px;
+}
+
+.features__illustration {
+  width: 50%;
+}
+
+.features__illustration-img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+  .features {
+    padding: 100px 0;
+  }
+
+  .features-container {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  .features__inner {
+    width: 70%;
+  }
+
+  .features__heading {
+    line-height: 40px;
+  }
+
+  .features__illustration {
+    width: 60%;
+    margin: 25px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .features__inner {
+    width: 90%;
+  }
+
+  .features__heading {
+    text-align: center;
+  }
+
+  .features__illustration {
+    display: none;
+  }
+}

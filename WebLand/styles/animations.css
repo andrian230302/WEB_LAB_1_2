@@ -1,0 +1,96 @@
+/* Global styles animation */
+
+.primary-button {
+  transition: all 0.3s ease-out;
+}
+
+.primary-button:hover {
+  background-color: #bd0a0a;
+}
+
+/* Navigation bar */
+
+.nav__item {
+  transition: all 0.3s ease-out;
+}
+
+.nav__item:hover {
+  color: #F53838;
+}
+
+.nav__buttons-signin {
+  transition: all 0.3s ease-out;
+}
+
+.nav__buttons-signin:hover {
+  color: #F53838;
+}
+
+.nav__buttons-signup {
+  transition: all 0.3s ease-out;
+}
+
+.nav__buttons-signup:hover {
+  background-color: #F53838;
+  color: #FFFFFF;
+}
+
+.nav__logo {
+  transition: all 0.3s ease-out;
+}
+
+.nav__logo:hover {
+  transform: scale(1.02);
+}
+
+/* Navigation hamburger */
+
+.nav__hamburger-line {
+  transition: all .3s ease-in-out;
+}
+
+.nav__hamburger-line::before,
+.nav__hamburger-line::after {
+  transition: all .3s ease-in-out;
+}
+
+.nav__hamburger-line::before {
+  transform: translateY(-10px);
+}
+
+.nav__hamburger-line::after {
+  transform: translateY(10px);
+}
+
+.nav__hamburger.show .nav__hamburger-line {
+  background: transparent;
+}
+
+.nav__hamburger.show .nav__hamburger-line::before {
+  transform: rotate(45deg);
+}
+
+.nav__hamburger.show .nav__hamburger-line::after {
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 1023px) {
+  .nav__menu {
+    transition: all .3s ease-in-out;
+    transform: translateX(-100%);
+  }
+}
+
+.nav__menu.show {
+  transform: translateX(0);
+}
+
+/* Feedback message */
+
+.feedback__message {
+  transition: all 0.3s ease-out;
+}
+
+.feedback__message:hover {
+  border-color: #F53838;
+}

@@ -1,0 +1,94 @@
+.feedback {
+    padding: 57px 0;
+}
+
+.feedback__text {
+    max-width: 520px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.feedback__heading {
+    line-height: 50px;
+}
+
+.feedback__paragraph {
+    line-height: 30px;
+}
+
+.feedback__messages {
+    display: flex;
+    justify-content: center;
+    margin-top: 58px;
+}
+
+.feedback__message {
+    width: 350px;
+    border: 2px solid #DDDDDD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 30px 26px 0;
+    margin: 1%;
+}
+
+.feedback__message-top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.feedback__user {
+    margin: 0px 15px;
+}
+
+.feedback__user-name {
+    margin: 0;
+}
+
+.feedback__user-location {
+    margin: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #4F5665;
+}
+
+.feedback__rate {
+    margin-left: auto;
+    color: #0B132A;
+    display: flex;
+    align-items: center;
+}
+
+.feedback__rate::after {
+    content: url('../img/star.svg');
+    margin-left: 10px;
+}
+
+.feedback__message-text {
+    line-height: 30px;
+    color: #0B132A;
+}
+
+@media screen and (max-width: 1023px) {
+    .feedback__heading {
+        line-height: 40px;
+    }
+    .feedback__messages {
+        flex-wrap: wrap;
+    }
+    .feedback__message {
+        width: 300px;
+        min-height: 220px;
+    }
+    .feedback__message-text {
+        line-height: 25px;
+        padding: 1% 2%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .feedback__message {
+        margin: 3%;
+        padding: 25px 13px 0;
+    }
+}
